@@ -1,0 +1,4 @@
+https://scikit-learn.org/stable/modules/tree.html#regression
+https://iopscience.iop.org/article/10.1088/1748-9326/8/2/024009
+https://en.wikipedia.org/wiki/Decision_tree_learning
+https://energyeducation.ca/encyclopedia/Wind_power
