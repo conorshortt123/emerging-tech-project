@@ -6,6 +6,7 @@ This is a repository for my Emerging Technologies module, for which I will creat
 ## How to Run *with* Docker
 * Download the latest version of Docker
 * Navigate into the flask-web-application directory: `cd flask-web-application`
+* `docker build -t emerging-tech-project .`
 * `docker run -d -p 5000:5000 emerging-tech-project`
 
 ## How to Run *without* Docker
