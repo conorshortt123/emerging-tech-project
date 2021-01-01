@@ -10,7 +10,6 @@ from power_predictor import predict_power
 
 # Create a new web app.
 app = fl.Flask(__name__)
-app.run(debug=True, use_reloader=False)
 
 # Add root route.
 @app.route("/")
@@ -23,6 +22,6 @@ def power_prediction():
 
   args = request.args
 
-  val = {"value": predict_power(args.get('windspeed'))}
+  val = {"value": str(predict_power(args.get('windspeed'))) + " kW/s"}
   
   return val

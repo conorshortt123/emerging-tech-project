@@ -1,5 +1,4 @@
 from __future__ import print_function
-from flask import app
 import numpy as np
 from sklearn import tree
 import os

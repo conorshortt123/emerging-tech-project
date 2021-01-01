@@ -16,15 +16,14 @@
   <title>Wind Turbine Power Predictor</title>
 </head>
 
-<body>
-  <nav style="background-color: #5f788a; font-weight: 500; margin: 10 auto">
+<body style="background-image: url('../static/background.jpg'); background-color: #cccccc; height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <nav style="background-color: #5f788a; font-weight: 500; margin: 10 auto; height: 50px">
     <div class="container">
-      <h3 style="color: white; font-weight: bold;">Wind Turbine Power Predictor</h3>
+      <h3 style="color: white; font-weight: bold; padding-top: 5px">Wind Turbine Power Predictor</h3>
     </div>
   </nav>
-
-  <h1 align="center">Wind Turbine Power Predictor</h1>
-  <div class="container" align="center">
+  <div class="container" align="center" style="position: relative; top: 60%; transform: translate(0, -50%);">
+    <h1 align="center">Wind Turbine Power Predictor</h1>
     <div class="row">
       <div class="col-sm">
         <!--<input class="form-control" id="input" type="text" placeholder="Enter wind speed...">-->
@@ -32,7 +31,7 @@
           <div class="input-group-prepend">
             <button class="btn btn-outline-primary" type="button" id="predict-button">Predict Power Output</button>
           </div>
-          <input type="text" id="input" class="form-control" placeholder="Enter wind speed...">
+          <input type="text" id="input" class="form-control" placeholder="Enter wind speed...(m/s)">
         </div>
       </div>
     </div>
