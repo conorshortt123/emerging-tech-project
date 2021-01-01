@@ -6,8 +6,6 @@ import sys
 
 def predict_power(wind_speed):
 
-    print("PRINTING CURRENT DIRECTORY " + os.getcwd(), file=sys.stderr)
-
     filename="./api/powerproduction.csv"
 
     data = np.loadtxt(filename, delimiter=",", skiprows=1)
@@ -16,7 +14,7 @@ def predict_power(wind_speed):
     x = data[:,[0]]
     y = (data[:,[1]]).reshape(-1)
 
-    model = tree.DecisionTreeRegressor().fit(x, y)
+    model = tree.DecisionTreeRegressor(max_depth=13).fit(x, y)
 
     pred = model.predict([[wind_speed]])
 
