@@ -3,7 +3,12 @@
 
 This is a repository for my Emerging Technologies module, for which I will create a web application using Flask that utilizes a machine learning model to accurately predict wind turbine power output from wind speed.
 
-## How to Run
+## How to Run *with* Docker
+* Download the latest version of Docker
+* Navigate into the flask-web-application directory: `cd flask-web-application`
+* `docker run -d -p 5000:5000 emerging-tech-project`
+
+## How to Run *without* Docker
 * Download the latest version of python 3
 * Navigate into the flask-web-application directory: `cd flask-web-application`
 * Project dependencies: `pip install -r requirements.txt`
